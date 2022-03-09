@@ -1,0 +1,15 @@
+{
+  "name": "talktome",
+  "version": "1.0.0",
+  "description": "Simple web app that passes user information to the server and stores it in a file. The user can then request the information back on another page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Pardridge",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

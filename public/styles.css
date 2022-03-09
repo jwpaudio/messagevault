@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#secretMessage[type="text"],
+#uniqueCode[type="text"] {
+  padding: 10px;
+}
+#submit,
+#retrieveSubmit {
+  border: none;
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+#submit:hover,
+#retrieveSubmit:hover {
+  background-color: black;
+  color: white;
+}
+#response,
+#retrieve-response {
+  text-align: center;
+}
