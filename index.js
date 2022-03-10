@@ -9,6 +9,7 @@ app.listen(4000, () => {
 });
 
 app.use(express.json());
+app.use(express.static("./public"));
 
 //Routes
 app.post("/secret_message", (req, res) => {
