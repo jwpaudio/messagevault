@@ -22,10 +22,6 @@ app.post("/secret_message", (req, res) => {
     });
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/public/index.html"));
-});
-
 app.get("/retrieve", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/retrieve.html"));
 });
