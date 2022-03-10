@@ -8,7 +8,6 @@ app.listen(4000, () => {
   console.log("Listening on port 4000");
 });
 
-app.use(express.static("public"));
 app.use(express.json());
 
 //Routes
@@ -20,6 +19,10 @@ app.post("/secret_message", (req, res) => {
     res.status(404).json({
       response: "Empty",
     });
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 app.get("/retrieve", (req, res) => {
