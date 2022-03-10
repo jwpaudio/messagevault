@@ -21,7 +21,7 @@ function handleSubmit() {
   console.log(JSON.stringify(formDataObject));
 
   //Send data to server
-  postData("/secret_message", formDataObject)
+  postData("./secret_message", formDataObject)
     .then((response) => {
       console.log(response);
       //Set response element on page
