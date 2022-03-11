@@ -30,7 +30,7 @@ function handleSubmit() {
         responseElement.innerText =
           "SERVER RESPONSE:  You didn't enter anything, try again.";
       } else {
-        responseElement.innerHTML = `<span style='color: green'>SERVER RESPONSE: Success!</span><br /><br /><span>Your secret code is: <h2 style='color: red'>${response.id}</h2></span><h4>Click <a href='/retrieve'>Here</a> to go to the next page so you can retrieve your data.</h4>`;
+        responseElement.innerHTML = `<span style='color: green'>SERVER RESPONSE: Success!</span><br /><br /><span>Your secret code is: <h2 style='color: red'>${response.id}</h2></span>`;
       }
     })
     .catch((error) => {

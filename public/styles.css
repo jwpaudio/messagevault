@@ -1,22 +1,87 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#nav-bar {
+  height: 50px;
+  width: 90vw;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+#nav-bar-left {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+}
+#nav-bar-title {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+}
+#nav-bar-right {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: flex-end;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.navlinks > a {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.4em;
+}
+.navlinks > a:hover {
+  color: black;
 }
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 75vw;
+  margin-top: 5vh;
+  font-family: "Courier New", Courier, monospace;
+}
+.main > h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 2em;
+}
+.main > h3 {
+  font-weight: normal;
 }
 .form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 #secretMessage[type="text"],
 #uniqueCode[type="text"] {
   padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 0.9em;
+  -webkit-appearance: none;
 }
 #submit,
 #retrieveSubmit {
@@ -24,6 +89,10 @@ body {
   width: 100%;
   padding: 10px 10px;
   margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1em;
+  -webkit-appearance: none;
 }
 #submit:hover,
 #retrieveSubmit:hover {
@@ -33,4 +102,33 @@ body {
 #response,
 #retrieve-response {
   text-align: center;
+}
+
+@media only screen and (max-width: 615px) {
+  #nav-bar {
+    height: 65px;
+  }
+  #nav-bar-left {
+    display: none;
+  }
+  #nav-bar-right {
+    width: 90vw;
+    justify-content: center;
+  }
+  .navlinks {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .navlinks > a {
+    font-weight: bold;
+    font-size: 1.75em;
+  }
+  #submit,
+  #retrieveSubmit {
+    height: 6vh;
+  }
+  #secretMessage[type="text"],
+  #uniqueCode[type="text"] {
+    height: 3vh;
+  }
 }
