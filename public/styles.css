@@ -93,6 +93,8 @@ body {
   font-weight: bold;
   font-size: 1em;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 #submit:hover,
 #retrieveSubmit:hover {
@@ -121,7 +123,17 @@ body {
   }
   .navlinks > a {
     font-weight: bold;
-    font-size: 1.75em;
+    font-size: 1.5em;
+  }
+  .main {
+    margin-top: 2vh;
+  }
+  .main > h2 {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+  .main > h3 {
+    margin-top: 1vh;
   }
   #submit,
   #retrieveSubmit {
@@ -130,5 +142,9 @@ body {
   #secretMessage[type="text"],
   #uniqueCode[type="text"] {
     height: 3vh;
+  }
+  #secretMessage,
+  #uniqueCode {
+    margin-bottom: 1vh;
   }
 }
