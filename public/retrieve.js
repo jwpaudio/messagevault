@@ -25,7 +25,7 @@ function handleRetrieve() {
       } else if (response.message === 404) {
         responseElement.innerHTML = `<h3 style="color: red">You didn't enter anything! Please try again.</h3>`;
       } else {
-        responseElement.innerHTML = `<h3 style="color: green">VAULT UNLOCKED!</h3><br /><h3>Your secret message was: </h3><br /><span style="font-style: italic">${response.message}</span>`;
+        responseElement.innerHTML = `<h3 style="color: green">VAULT UNLOCKED!</h3><h3>Your secret message was: </h3><span style="font-style: italic; font-size: 1em; font-weight: normal">${response.message}</span>`;
       }
     })
     .catch((error) => {
